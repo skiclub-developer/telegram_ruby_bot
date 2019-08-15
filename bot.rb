@@ -1,3 +1,4 @@
+require 'dotenv/load'
 require 'telegram/bot'
 require 'json'
 require './punishments'
@@ -10,7 +11,7 @@ class String
   end
 end
 
-token = '762317235:AAGAVpEswx5aAuf8ZjueYfAGCkP7bTy9fIQ'
+token = ENV['TOKEN']
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|

@@ -8,7 +8,7 @@ def pay_penalty(bot, message, type)
       "payment_type": type
   }
 
-  response = JSON.parse(Faraday.post("http://localhost:3000/api/v1/members/pay", body).body, object_class: OpenStruct)
+  response = JSON.parse(Faraday.post("http://api:3000/api/v1/members/pay", body).body, object_class: OpenStruct)
   response.updated_members.each do |updated_member|
     if type == "beer"
       bot.api.send_message(chat_id: message.chat.id, text: "#{updated_member.name} hat #{updated_member.amount} Kisten geschmissen")

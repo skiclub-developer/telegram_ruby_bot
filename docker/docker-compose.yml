@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  bot:
+    image: skiclubdeveloper/bot:2
+    container_name: bot
+    command: ruby bot.rb
+    environment:
+      TOKEN: 762317235:AAGAVpEswx5aAuf8ZjueYfAGCkP7bTy9fIQ

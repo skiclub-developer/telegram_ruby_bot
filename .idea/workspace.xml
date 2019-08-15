@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f4122c0-0e32-4a28-9b4a-70dcd640188d" name="Default Changelist" comment="" />
+    <list default="true" id="2f4122c0-0e32-4a28-9b4a-70dcd640188d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.example.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team_funds_ruby_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team_funds_ruby_bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/bot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/punishments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/punishments.rb" afterDir="false" />
+    </list>
+    <list id="bef38d44-7322-44f9-a30a-4de3123b9fc3" name="DO NOT COMMIT" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PBpgOQa86c9iydYZaSHwGa07hh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -73,6 +89,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2f4122c0-0e32-4a28-9b4a-70dcd640188d" name="Default Changelist" comment="" />
+      <changelist id="bef38d44-7322-44f9-a30a-4de3123b9fc3" name="DO NOT COMMIT" comment="" />
       <created>1565357455100</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -80,14 +97,37 @@
       <workItem from="1565357456859" duration="12696000" />
       <workItem from="1565723392366" duration="64000" />
       <workItem from="1565723494111" duration="3585000" />
-      <workItem from="1565793715542" duration="5564000" />
+      <workItem from="1565793715542" duration="9868000" />
     </task>
+    <task id="LOCAL-00001" summary="Add gitignore.">
+      <created>1565819081502</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565819081502</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1565818750473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
+    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1565888172053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
   </component>
 </project>
