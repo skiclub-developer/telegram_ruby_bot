@@ -1,0 +1,42 @@
+tunnel - 1€
+tunnelhacke - 1€
+kontakte15 - 1€
+kontakt14verkackt - 2€
+ball1verkackt - 1€
+ball1verhindert - 1€
+ball1tunnel - 1€
+ballinstor - 1€
+rotekartebeleidigung - 25€ + Kiste
+platzverweismeckern - 50€
+gelbekartemeckern - 10€
+trainerhinterbande - 25€ + Kiste
+unentschuldigtspiel - 50€
+unentschuldigttraining - 10€ + Kiste
+abmeldungingruppe - 5€
+alkoholisiertzumspiel - 50€ + Kiste
+sieg - 15€
+unentschieden - 6€
+pflichtspielverloren - 2€
+sachenvergessen - 2€
+teilevontrikotsatzvergessen - 5€
+falschereinwurf - 2€
+torschussinsseitenaus - Kiste
+evakuierungkabine - 15€
+abartigfurzen - 5€
+übernzaunschießen - 2€
+schussauftennisplatz - 2€
+foto - 1€
+pinkelninderdusche - 5€
+asozialesverhalten - 5€
+nichtbeimspielgucken - 10€
+geburtstagswünschegruppe - 5€
+bezahlen - Gib an wie viel der jeweilige Spieler bezahlt hat -> Patti10,Robin20
+bezahlenkiste - Gib an wie viele Kisten der jeweilige Spieler geschmissen hat -> Patti1,Robin2
+offen - Gibt an wie viel € an Strafen und wie viele Kisten die Spieler noch offen haben -> Patti,Robin
+zeigespieler - Listet alle Spieler auf für die Strafen hinzugefügt werden können
+listeallerzahlungen - Listet alle bezahlten Strafen des angegebenen Spielers auf
+listeallerbierzahlungen - Listet alle offenen Kisten des angegebenen Spielers auf
+listeallerstrafen - Listet alle Strafen für den genannten Spieler auf
+spielverlorenalle - Fügt die Strafe für ein verlorenes Pflichtspiel jedem Spieler hinzu
+betragplus - Fügt den aufgelisteten Spielern den bestimmten Betrag zu -> Patti10,Robin20
+kisteplus - Fügt den aufgelisteten Spielern die bestimmte Anzahl an Kisten hinzu --> Patti1,Robin1
