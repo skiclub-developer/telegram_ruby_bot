@@ -1,4 +1,5 @@
 require './helpers'
+require './constants'
 
 def punish_member(bot, message)
   players_and_numbers = split_message(message)
@@ -11,7 +12,7 @@ def punish_member(bot, message)
       "telegram_user": telegram_user(message)
   }
 
-  response = JSON.parse(Faraday.post("http://api:3000/api/v1/members/punish", body).body, object_class: OpenStruct)
+  response = JSON.parse(Faraday.post("#{HOST}/members/punish", body).body, object_class: OpenStruct)
 
   if response.error != nil
     bot.api.send_message(chat_id: message.chat.id, text: response.error)
@@ -25,11 +26,11 @@ def punish_member(bot, message)
 end
 
 def lost_game_players(bot, message)
-  response = Faraday.patch("http://api:3000/api/v1/members")
+  response = Faraday.patch("#{HOST}/members")
   body = {
       "telegram_user": telegram_user(message)
   }
-  payment_response = Faraday.post("http://api:3000/api/v1/member_penalties", body)
+  payment_response = Faraday.post("#{HOST}/member_penalties", body)
 
   if response.status && payment_response.status == 201
     bot.api.send_message(chat_id: message.chat.id, text: "Für jeden Spieler wurde ein verlorenes Pflichtspiel hinzugefüght")
@@ -48,7 +49,7 @@ def add_penalty(bot, message, type)
       "payment_type": type
   }
 
-  response = JSON.parse(Faraday.patch("http://api:3000/api/v1/members", body).body, object_class: OpenStruct)
+  response = JSON.parse(Faraday.patch("#{HOST}/members", body).body, object_class: OpenStruct)
   response.updated_members.each do |updated_member|
     if type == "beer"
       text = "Dem Spieler #{updated_member.name} wurden #{updated_member.amount} Kisten hinzugefügt"

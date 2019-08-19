@@ -4,6 +4,7 @@ require 'json'
 require './punishments'
 require './payments'
 require './show'
+require './constants'
 
 class String
   def numeric?
@@ -11,9 +12,7 @@ class String
   end
 end
 
-token = ENV['TOKEN']
-
-Telegram::Bot::Client.run(token) do |bot|
+Telegram::Bot::Client.run(TOKEN) do |bot|
   bot.listen do |message|
     instruction = message.text.partition(' ').first
     instruction = instruction[1, instruction.length]
