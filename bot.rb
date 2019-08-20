@@ -12,9 +12,12 @@ class String
   end
 end
 
-Telegram::Bot::Client.run(TOKEN) do |bot|
+token = "762317235:AAGAVpEswx5aAuf8ZjueYfAGCkP7bTy9fIQ"
+
+Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
     instruction = message.text.partition(' ').first
+    instruction = instruction.partition('@').first
     instruction = instruction[1, instruction.length]
 
     case instruction

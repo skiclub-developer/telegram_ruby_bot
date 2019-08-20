@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f4122c0-0e32-4a28-9b4a-70dcd640188d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.rb" beforeDir="false" afterPath="$PROJECT_DIR$/constants.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/bot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_commands" beforeDir="false" afterPath="$PROJECT_DIR$/bot_commands" afterDir="false" />
     </list>
     <list id="bef38d44-7322-44f9-a30a-4de3123b9fc3" name="DO NOT COMMIT" comment="">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
@@ -91,7 +91,7 @@
       <workItem from="1565723494111" duration="3585000" />
       <workItem from="1565793715542" duration="10296000" />
       <workItem from="1566206628101" duration="3838000" />
-      <workItem from="1566329422097" duration="1319000" />
+      <workItem from="1566329422097" duration="2579000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore.">
       <created>1565819081502</created>
@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566249053352</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix constants so that docker env variables are found.">
+      <created>1566330757885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566330757885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,23 +155,24 @@
     <MESSAGE value="Version 1.0.0." />
     <MESSAGE value="Move host to env variable." />
     <MESSAGE value="Add bot commands for future reference." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bot commands for future reference." />
+    <MESSAGE value="Fix constants so that docker env variables are found." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix constants so that docker env variables are found." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/telegram-bot-ruby-0.11.0/lib/telegram/bot/api.rb</url>
-          <line>74</line>
+          <url>file://$PROJECT_DIR$/show.rb</url>
+          <line>21</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1566330713586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
+    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1566332049637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
   </component>
 </project>
