@@ -1,2 +1,2 @@
-TOKEN = ENV['token']
-HOST = "http://#{ENV['host']}/api/v1"
+TOKEN = ENV['TOKEN']
+HOST = "http://#{ENV['HOST']}/api/v1"
