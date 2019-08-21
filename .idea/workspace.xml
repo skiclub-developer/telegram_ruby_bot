@@ -4,7 +4,8 @@
     <list default="true" id="2f4122c0-0e32-4a28-9b4a-70dcd640188d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/bot.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_commands" beforeDir="false" afterPath="$PROJECT_DIR$/bot_commands" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/punishments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/punishments.rb" afterDir="false" />
     </list>
     <list id="bef38d44-7322-44f9-a30a-4de3123b9fc3" name="DO NOT COMMIT" comment="">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
@@ -91,7 +92,8 @@
       <workItem from="1565723494111" duration="3585000" />
       <workItem from="1565793715542" duration="10296000" />
       <workItem from="1566206628101" duration="3838000" />
-      <workItem from="1566329422097" duration="2579000" />
+      <workItem from="1566329422097" duration="3450000" />
+      <workItem from="1566400146481" duration="1917000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore.">
       <created>1565819081502</created>
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566330757885</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove bot name from message.">
+      <created>1566332132349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566332132349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,23 +165,32 @@
     <MESSAGE value="Move host to env variable." />
     <MESSAGE value="Add bot commands for future reference." />
     <MESSAGE value="Fix constants so that docker env variables are found." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix constants so that docker env variables are found." />
+    <MESSAGE value="Remove bot name from message." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove bot name from message." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/show.rb</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/bot.rb</url>
+          <line>34</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/punishments.rb</url>
+          <line>28</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1566332049637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
+    <SUITE FILE_PATH="coverage/team_funds_ruby_bot@bot.rcov" NAME="bot Coverage Results" MODIFIED="1566401277759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="team_funds_ruby_bot" />
   </component>
 </project>

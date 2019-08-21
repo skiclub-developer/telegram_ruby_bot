@@ -12,9 +12,7 @@ class String
   end
 end
 
-token = "762317235:AAGAVpEswx5aAuf8ZjueYfAGCkP7bTy9fIQ"
-
-Telegram::Bot::Client.run(token) do |bot|
+Telegram::Bot::Client.run(TOKEN) do |bot|
   bot.listen do |message|
     instruction = message.text.partition(' ').first
     instruction = instruction.partition('@').first
@@ -35,7 +33,7 @@ Telegram::Bot::Client.run(token) do |bot|
       list_member_beer_payments bot, message
     when 'listeallerstrafen'
       list_all_member_penalties bot, message
-    when 'pflichtspielverloren'
+    when 'spielverlorenalle'
       lost_game_players bot, message
     when 'betragplus'
       add_penalty bot, message, "money"

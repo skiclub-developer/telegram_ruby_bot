@@ -36,3 +36,9 @@ def respond_member_not_found(bot, message, response)
     bot.api.send_message(chat_id: message.chat.id, text: "Der Spieler #{member_not_found} wurde nicht gefunden")
   end
 end
+
+def respond_member_without_amount(bot, message, response)
+  response.members_without_amount.each do |member_without_amount|
+    bot.api.send_message(chat_id: message.chat.id, text: "Für den Spieler #{member_without_amount} wurde keine Menge angegeben")
+  end
+end

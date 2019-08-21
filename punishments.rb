@@ -49,16 +49,21 @@ def add_penalty(bot, message, type)
       "payment_type": type
   }
 
-  response = JSON.parse(Faraday.patch("#{HOST}/members", body).body, object_class: OpenStruct)
-  response.updated_members.each do |updated_member|
-    if type == "beer"
-      text = "Dem Spieler #{updated_member.name} wurden #{updated_member.amount} Kisten hinzugefügt"
-    else
-      text = "Dem Spieler #{updated_member.name} wurden #{updated_member.amount}€ hinzugefügt"
+  response = Faraday.patch("#{HOST}/members", body)
+  if response.status == 200
+    json = JSON.parse(response.body, object_class: OpenStruct)
+    json.updated_members.each do |updated_member|
+      if type == "beer"
+        text = "Dem Spieler #{updated_member.name} wurden #{updated_member.amount} Kisten hinzugefügt"
+      else
+        text = "Dem Spieler #{updated_member.name} wurden #{updated_member.amount}€ hinzugefügt"
+      end
+      bot.api.send_message(chat_id: message.chat.id, text: text)
     end
-    bot.api.send_message(chat_id: message.chat.id, text: text)
+
+    respond_member_not_found bot, message, json
+    respond_member_without_amount bot, message, json
   end
 
-  respond_member_not_found bot, message, response
 end
 
