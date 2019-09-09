@@ -11,7 +11,7 @@ def get_player_name_and_penalty_number(player)
   end
 
   player_name = player[0, player.length - (counter * -1)]
-  penalty_number = player[player.length - (counter * -1)]
+  penalty_number = player[player.length - (counter * -1), player.length]
 
   {name: player_name, amount: penalty_number}
 end
